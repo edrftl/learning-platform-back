@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learning-platform-back", "learning-platform-back.csproj", "{3EDBF716-C0B4-4145-AE64-4F5071F66699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{DB3ACF55-21F0-4ED8-B329-0AB7DEFE2E5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EDBF716-C0B4-4145-AE64-4F5071F66699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDBF716-C0B4-4145-AE64-4F5071F66699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDBF716-C0B4-4145-AE64-4F5071F66699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDBF716-C0B4-4145-AE64-4F5071F66699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3ACF55-21F0-4ED8-B329-0AB7DEFE2E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3ACF55-21F0-4ED8-B329-0AB7DEFE2E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3ACF55-21F0-4ED8-B329-0AB7DEFE2E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3ACF55-21F0-4ED8-B329-0AB7DEFE2E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98B3C77A-667E-43A9-9848-C3F0BFB314E3}
+	EndGlobalSection
+EndGlobal
