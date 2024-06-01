@@ -53,6 +53,8 @@ namespace learning_platform_back.Services
                 PhoneNumber = model.PhoneNumber,
                 Birthdate = model.Birthdate,
                 groupId = model.groupId,
+                courseId = model.courseId,
+
             };
 
             var result = await userManager.CreateAsync(newUser, model.Password);

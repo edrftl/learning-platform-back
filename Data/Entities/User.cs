@@ -14,5 +14,7 @@ namespace Data.Entities
         public DateTime? Birthdate { get; set; }
         public Groups? Group { get; set; }
         public int groupId { get; set; }
+        public Course? Course { get; set; }
+        public int courseId { get; set; }
     }
 }

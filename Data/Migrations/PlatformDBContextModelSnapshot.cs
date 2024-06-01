@@ -268,6 +268,9 @@ namespace Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<int>("courseId")
+                        .HasColumnType("int");
+
                     b.Property<int>("groupId")
                         .HasColumnType("int");
 
@@ -280,6 +283,8 @@ namespace Data.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("courseId");
 
                     b.HasIndex("groupId");
 
@@ -465,11 +470,19 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Entities.User", b =>
                 {
+                    b.HasOne("Data.Entities.Course", "Course")
+                        .WithMany("Users")
+                        .HasForeignKey("courseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Data.Entities.Groups", "Group")
                         .WithMany("Studants")
                         .HasForeignKey("groupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Course");
 
                     b.Navigation("Group");
                 });
@@ -535,6 +548,8 @@ namespace Data.Migrations
                     b.Navigation("Groups");
 
                     b.Navigation("Subjects");
+
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("Data.Entities.Groups", b =>

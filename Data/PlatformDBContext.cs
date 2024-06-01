@@ -37,6 +37,10 @@ namespace Data
            .HasForeignKey(g => g.CourseId)
            .OnDelete(DeleteBehavior.Restrict);
 
+
+
+            
+
             // Ensure Categories are seeded before Courses
             modelBuilder.Entity<Category>().HasData(
                 new Category() { Id = 1, Name = "Fitness" },

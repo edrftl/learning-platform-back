@@ -19,6 +19,8 @@ namespace Data.Entities
         public int CategoryId { get; set; }
         public ICollection<Subject>? Subjects { get; set; }
         public ICollection<Groups>? Groups { get; set; }
+        public ICollection<User>? Users { get; set; }
+
 
     }
 }

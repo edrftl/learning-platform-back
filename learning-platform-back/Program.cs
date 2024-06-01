@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-string connStr = builder.Configuration.GetConnectionString("LocalDb")!;
+string connStr = builder.Configuration.GetConnectionString("SomeeDB")!;
 
 // Add services to the container.
 

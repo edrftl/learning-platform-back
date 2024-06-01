@@ -7,5 +7,6 @@
         public DateTime Birthdate { get; set; }
         public string? PhoneNumber { get; set; }
         public int groupId { get; set; }
+        public int courseId { get; set; }
     }
 }
