@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>learning_platform_back</RootNamespace>
+    <UserSecretsId>7ed1fb24-1ab8-45b1-8d42-aea1ff042b1f</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

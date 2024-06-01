@@ -31,6 +31,8 @@ namespace learning_platform_back.Services
                 throw new Exception("Invalid user login or password.");
 
             await signInManager.SignInAsync(user, true);
+
+            // return
         }
 
         public async Task Logout()

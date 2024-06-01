@@ -27,7 +27,9 @@ namespace learning_platform_back.Controllers
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             await accountsService.Login(model);
+            // to return 
             return Ok();
+            //return Ok(await accountsService.Login(model));
         }
 
         [HttpPost("logout")]
